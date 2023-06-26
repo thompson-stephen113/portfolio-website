@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="./img/srt-favicon.svg">
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Noto+Sans&family=Roboto+Mono&display=swap">
+                
+                <!-- alternate css file for real-time site updating before postprocessing -->
+        <!-- <link rel="stylesheet" href="css/styles.css"> -->
+        
+        <link rel="stylesheet" type="text/css" href="css/style.production.css">
+        <title>Stephen Thompson - Contact Me</title>
+    </head>
+
+    <body>
+        <header class="page-header">
+            <img src="img/srt-logo.png" class="website-logo page-header__item" alt="logo">
+            <nav class="main-navigation page-header__item">
+                <ul role="menubar" class="navigation-list">
+                    <li role="presentation">
+                        <a href="./index.html" role="menuitem" class="navigation-list__item">Home</a>
+                    </li>
+                    <li role="presentation">
+                        <a href="./about.html" role="menuitem" class="navigation-list__item">About Me</a>
+                    </li>
+                    <li role="presentation">
+                        <a href="./work.html" role="menuitem" class="navigation-list__item">My Work</a>
+                    </li>
+                    <li role="presentation">
+                        <a href="./contact.html" role="menuitem" class="navigation-list__item navigation-list__item--active">Contact Me</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        
+        <div class="content-container">
+            <main class="contact-main">
+                <h1>Contact Me</h1>
+                <div>
+                    <h2>CareerFoudry</h2>
+                    <p>
+                        123 Main Street
+                    </p>
+                    <p>
+                        Atlanta, GA 30313
+                    </p>
+                    <p>
+                        United States
+                    </p>
+                    <br>
+                    <a href="tel:555-555-5555">Tel: 555-555-5555</a>
+                    <br>
+                    <a href="mailto:office@careerfoundry.com">Email: office@careerfoundry.com</a>
+                    <br>
+                    <a href="mailto:office@careerfoundry.com">Contact me</a>
+                </div>
+                <br>
+
+                <form action="" method="post" id="contact-form">
+                    <div>
+                        <label class="standard-label" for="contact-email">*Email: </label>
+                        <input type="email" id="contact-email" required>
+                    </div>
+                    <br>
+                    <div>
+                        <label class="standard-label" for="contact-telephone">Telephone: </label>
+                        <input type="tel" id="contact-telephone" pattern="\d{3}[\-]\d{3}[\-]\d{4}">
+                    </div>
+                    <br>
+                    <div>
+                        <label class="standard-label" for="contact-message">*Message: </label>
+                        <textarea maxlength="240" id="contact-message" required></textarea>
+                    </div>
+                    <br>
+                    <input type="submit" value="Send message">
+                </form>
+            </main>
+
+            <footer class="page-footer">
+                <p>Find me on</p>
+                <div class="social-media">
+                    <a style="text-decoration: none" href="https://github.com/" target="_blank">
+                        <img src="./img/github-icon.svg" alt="Github">
+                    </a>
+                    <a style="text-decoration: none" href="https://twitter.com/" target="_blank">
+                        <img src="./img/twitter-icon.svg" alt="Twitter">
+                    </a>
+                    <a style="text-decoration: none" href="https://linkedin.com/" target="_blank">
+                        <img src="./img/linkedin-icon.svg" alt="LinkedIn">
+                    </a>
+                </div>
+            </footer>
+        </div>
+
+        <script src="js/tota11y.min.js"></script>
+    </body>
+</html>
