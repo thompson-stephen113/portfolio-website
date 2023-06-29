@@ -19,7 +19,9 @@
 
     <body>
         <header class="page-header">
-            <img src="img/srt-logo.png" class="website-logo page-header__item" alt="logo">
+            <a href="./index.html" class="logo-link" target="_parent">
+                <img src="img/srt-logo.png" class="website-logo page-header__item" alt="logo">
+            </a>
             <nav class="main-navigation page-header__item">
                 <ul role="menubar" class="navigation-list">
                     <li role="presentation">
@@ -41,44 +43,36 @@
         <div class="content-container">
             <main class="contact-main">
                 <h1>Contact Me</h1>
-                <div>
-                    <h2>CareerFoudry</h2>
-                    <p>
-                        123 Main Street
-                    </p>
-                    <p>
-                        Atlanta, GA 30313
-                    </p>
-                    <p>
-                        United States
-                    </p>
-                    <br>
-                    <a href="tel:555-555-5555">Tel: 555-555-5555</a>
-                    <br>
-                    <a href="mailto:office@careerfoundry.com">Email: office@careerfoundry.com</a>
-                    <br>
-                    <a href="mailto:office@careerfoundry.com">Contact me</a>
+                <div class="contact-div">
+                    <div class="contact-info">
+                        <h2>Stephen Thompson</h2>
+                        <br>
+                        <a href="tel:770-359-7037">Phone: 770-359-7037</a>
+                        <br>
+                        <a href="mailto:thompson.stephen113@gmail.com">Email: thompson.stephen113@gmail.com</a>
+                        <br>
+                        <a href="mailto:thompson.stephen113@gmail.com">Contact me</a>
+                    </div>
+                    <form class="contact-form" method="post" id="contact-form">
+                        <h2>Send a quick message</h2>
+                        <div>
+                            <label class="standard-label" for="contact-email">*Email: </label>
+                            <input type="email" id="contact-email" required>
+                        </div>
+                        <br>
+                        <div>
+                            <label class="standard-label" for="contact-telephone">Phone: </label>
+                            <input type="tel" id="contact-telephone" pattern="\d{3}[\-]\d{3}[\-]\d{4}">
+                        </div>
+                        <br>
+                        <div>
+                            <label class="standard-label" for="contact-message">*Message: </label>
+                            <textarea maxlength="240" id="contact-message" required></textarea>
+                        </div>
+                        <br>
+                        <input type="submit" value="Send message">
+                    </form>
                 </div>
-                <br>
-
-                <form action="" method="post" id="contact-form">
-                    <div>
-                        <label class="standard-label" for="contact-email">*Email: </label>
-                        <input type="email" id="contact-email" required>
-                    </div>
-                    <br>
-                    <div>
-                        <label class="standard-label" for="contact-telephone">Telephone: </label>
-                        <input type="tel" id="contact-telephone" pattern="\d{3}[\-]\d{3}[\-]\d{4}">
-                    </div>
-                    <br>
-                    <div>
-                        <label class="standard-label" for="contact-message">*Message: </label>
-                        <textarea maxlength="240" id="contact-message" required></textarea>
-                    </div>
-                    <br>
-                    <input type="submit" value="Send message">
-                </form>
             </main>
 
             <footer class="page-footer">
