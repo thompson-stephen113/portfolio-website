@@ -1,0 +1,12 @@
+Linters and extensions utilized for portfolio website documents
+
+---HTML---
+HTML CSS Support
+HTMLHint
+IntelliSense for CSS class names in HTML
+
+---CSS---
+Stylelint
+scss-lint
+SCSS IntelliSense
+SCSS Formatter
