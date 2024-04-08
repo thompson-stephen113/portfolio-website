@@ -11,8 +11,7 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Noto+Sans&family=Roboto+Mono&display=swap">
         
                 <!-- alternate css file for real-time site updating before postprocessing -->
-        <!-- <link rel="stylesheet" href="css/styles.css"> -->
-        
+        <!-- <link rel="stylesheet" href="css/styles.css">        -->
         <link rel="stylesheet" type="text/css" href="css/style.production.css">
         <title>Home - Stephen Thompson</title>
     </head>
@@ -20,20 +19,30 @@
     <body>
         <div class="content-container">
             <header class="page-header">
+                <!-- Website logo -->
                 <a href="./index.html" class="logo-link" target="_parent">
                     <img src="img/srt-logo.png" class="website-logo page-header__item" alt="logo">
                 </a>
+    
+                <!-- Navigation Bar -->
                 <nav class="main-navigation page-header__item">
                     <ul role="menubar" class="navigation-list">
+                        <!-- Navigates to Home page -->
                         <li role="presentation">
                             <a href="./index.html" role="menuitem" class="navigation-list__item navigation-list__item--active">Home</a>
                         </li>
+    
+                        <!-- Navigates to About page -->
                         <li role="presentation">
                             <a href="./about.html" role="menuitem" class="navigation-list__item">About Me</a>
                         </li>
+    
+                        <!-- Navigates to Projects page -->
                         <li role="presentation">
-                            <a href="./work.html" role="menuitem" class="navigation-list__item">My Work</a>
+                            <a href="./work.html" role="menuitem" class="navigation-list__item">Projects</a>
                         </li>
+    
+                        <!-- Navigates to Contact page -->
                         <li role="presentation">
                             <a href="./contact.html" role="menuitem" class="navigation-list__item">Contact Me</a>
                         </li>
@@ -42,13 +51,18 @@
             </header>
 
             <main class="profile-main">
-                <img src="img/stephen-thompson.png" class="profile-portrait" alt="Stephen Thompson portrait">
+                <a href="./about.html">
+                    <img src="img/stephen-thompson.png" class="profile-portrait" alt="Stephen Thompson portrait">
+                </a>
+
                 <article>
-                    <h1>Hello World</h1>
+                    <h1 style="border: none; margin: 0;">Hello.</h1>
+
                     <p>
-                        My name is Stephen Thompson. I am a student <span class="profile-span">&lt;web&gt;</span> developer from the US.
+                        My name is Stephen Thompson. I am a student Full-Stack <span class="profile-span">&lt;Web&gt;</span> Developer from the US.
                     </p>
-                    <a href="#">Check out some of my code</a>
+
+                    <a href="/work.html">Check out some of my code</a>
                 </article>
             </main>
             <br>
@@ -61,20 +75,19 @@
 
             <footer class="page-footer">
                 <p>Find me on</p>
+
                 <div class="social-media">
-                    <a style="text-decoration: none" href="https://github.com/" target="_blank">
+                    <a style="text-decoration: none" href="https://github.com/thompson-stephen113" target="_blank">
                         <img src="./img/github-icon.svg" alt="Github">
                     </a>
-                    <a style="text-decoration: none" href="https://twitter.com/" target="_blank">
-                        <img src="./img/twitter-icon.svg" alt="Twitter">
-                    </a>
-                    <a style="text-decoration: none" href="https://linkedin.com/" target="_blank">
+                
+                    <a style="text-decoration: none" href="https://linkedin.com/in/stephen-thompson-790202241" target="_blank">
                         <img src="./img/linkedin-icon.svg" alt="LinkedIn">
                     </a>
                 </div>
             </footer>
         </div>
 
-        <script src="js/tota11y.min.js"></script>
+        <!-- <script src="js/tota11y.min.js"></script> -->
     </body>
 </html>

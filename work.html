@@ -12,27 +12,36 @@
                 
                 <!-- alternate css file for real-time site updating before postprocessing -->
         <!-- <link rel="stylesheet" href="css/styles.css"> -->
-        
         <link rel="stylesheet" type="text/css" href="css/style.production.css">
-        <title>My Work - Stephen Thompson</title>
+        <title>Projects - Stephen Thompson</title>
     </head>
     
     <body>
         <header class="page-header">
+            <!-- Website logo -->
             <a href="./index.html" class="logo-link" target="_parent">
                 <img src="img/srt-logo.png" class="website-logo page-header__item" alt="logo">
             </a>
+
+            <!-- Navigation Bar -->
             <nav class="main-navigation page-header__item">
                 <ul role="menubar" class="navigation-list">
+                    <!-- Navigates to Home page -->
                     <li role="presentation">
                         <a href="./index.html" role="menuitem" class="navigation-list__item">Home</a>
                     </li>
+
+                    <!-- Navigates to About page -->
                     <li role="presentation">
                         <a href="./about.html" role="menuitem" class="navigation-list__item">About Me</a>
                     </li>
+
+                    <!-- Navigates to Projects page -->
                     <li role="presentation">
-                        <a href="./work.html" role="menuitem" class="navigation-list__item navigation-list__item--active">My Work</a>
+                        <a href="./work.html" role="menuitem" class="navigation-list__item navigation-list__item--active">Projects</a>
                     </li>
+
+                    <!-- Navigates to Contact page -->
                     <li role="presentation">
                         <a href="./contact.html" role="menuitem" class="navigation-list__item">Contact Me</a>
                     </li>
@@ -42,60 +51,111 @@
 
         <div class="content-container">
             <main class="work-main">
-                <h1>My Work</h1>
+                <h1>Projects</h1>
+
                 <div class="my-work-grid">
+                    <!-- Portfolio Website -->
                     <div class="my-work-grid__item">
-                        <h2>Placeholder Project 1</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                        <a href="#">See project on Github</a>
+                        <h2>Portfolio Website</h2>
+
+                        <p>If you are curious about the code used to create this site, follow the link to the project repository.</p>
+
+                        <a href="https://github.com/thompson-stephen113/portfolio-website" target="_blank">Project Repository</a>
                     </div>
+
+                    <!-- Pokédex -->
                     <div class="my-work-grid__item">
-                        <h2>Placeholder Project 2</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                        <a href="#">See project on Github</a>
+                        <h2>Pokédex</h2>
+
+                        <img src="img/project-images/pokedex.png" class="work-image" alt="pokédex app">
+
+                        <p>Pokédex - JS App is a small project for a web application built with HTML, CSS, and JavaScript. The purpose is to demonstrate basic JavaScript functionality, fetching data from an external API, and utilizing jQuery and Bootstrap.</p>
+
+                        <a href="https://thompson-stephen113.github.io/pokedex-js-app/" target="_blank">Live site</a>
+
+                        <br>
+
+                        <a href="https://github.com/thompson-stephen113/pokedex-js-app" target="_blank">Project Repository</a>
                     </div>
+
+                    <!-- myFlix API -->
+                    <div class="my-work-grid__item">
+                        <h2>myFlix API</h2>
+
+                        <img src="img/project-images/myFlix-backend.png" class="work-image" alt="myFlix backend">
+
+                        <p>A REST API of a collection of movies and users for a web application. The web app will allow users to search for different movies, directors, and genres. Users will be able to register, update their personal information, and add movies to a favorites list.</p>
+
+                        <a href="https://github.com/thompson-stephen113/movie_api" target="_blank">Project Repository</a>
+                    </div>
+
+                    <!-- myFlix Client -->
+                    <div class="my-work-grid__item">
+                        <h2>myFlix Client</h2>
+
+                        <img src="img/project-images/myFlix-client.png" class="work-image" alt="myFlix client">
+
+                        <p>myFlix is a project for a web application built with the MERN tech stack. The purpose is to build the client-side for the app based on its existing server-side code, which is a REST API and database.</p>
+
+                        <a href="https://myflix-cf.netlify.app/" target="_blank">Live site</a>
+
+                        <br>
+
+                        <a href="https://github.com/thompson-stephen113/myFlix-client" target="_blank">Project Repository</a>
+                    </div>
+
+                    <!-- Meet React App -->
                     <div class="my-work-grid__item">
                         <h2>Meet React App</h2>
-                        <img src="img/meet-react-app.png" class="grid-image" alt="meet react app">
+
+                        <img src="img/project-images/meet-react-app.png" class="work-image" alt="meet react app">
+
                         <p>Meet is a project for a web application to build a serverless, progressive web application (PWA) with React using a test-driven development technique. The application uses the Google Calendar API to fetch upcoming events.</p>
-                        <a href="https://thompson-stephen113.github.io/meet/">Live site</a>
-                        <br />
-                        <a href="https://github.com/thompson-stephen113/meet">See project on Github</a>
+                        
+                        <a href="https://thompson-stephen113.github.io/meet/" target="_blank">Live site</a>
+
+                        <br>
+
+                        <a href="https://github.com/thompson-stephen113/meet" target="_blank">Project Repository</a>
                     </div>
+
+                    <!-- Chat App -->
                     <div class="my-work-grid__item">
-                        <h2>Placeholder Project 4</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                        <a href="#">See project on Github</a>
+                        <h2>Chat App</h2>
+
+                        <img src="img/project-images/chat-app.png" class="work-image" alt="chat app">
+
+                        <p>Chat App is a project for a messaging application for mobile devices, built using React Native and Expo. The application uses Google Firebase anonymous authentication, Firestore Database to store messages, and Firebase Cloud Storage to store media.</p>
+
+                        <p>A live version of this app is not available as it has primarily been run through the Android Studio emulator.</p>
+
+                        <a href="https://github.com/thompson-stephen113/chat-app" target="_blank">Project Repository</a>
                     </div>
-                    <div class="my-work-grid__item">
-                        <h2>Placeholder Project 5</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                        <a href="#">See project on Github</a>
-                    </div>
-                    <div class="my-work-grid__item">
-                        <h2>Placeholder Project 6</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                        <a href="#">See project on Github</a>
-                    </div>
+                </div>
+
+                <!-- Image modal -->
+                <div id="image-modal" class="modal">
+                    <span class="close">&times;</span>
+                    <img class="modal-content" id="img01">
                 </div>
             </main>
 
             <footer class="page-footer">
                 <p>Find me on</p>
+
                 <div class="social-media">
-                    <a style="text-decoration: none" href="https://github.com/" target="_blank">
+                    <a style="text-decoration: none" href="https://github.com/thompson-stephen113" target="_blank">
                         <img src="./img/github-icon.svg" alt="Github">
                     </a>
-                    <a style="text-decoration: none" href="https://twitter.com/" target="_blank">
-                        <img src="./img/twitter-icon.svg" alt="Twitter">
-                    </a>
-                    <a style="text-decoration: none" href="https://linkedin.com/" target="_blank">
+                    
+                    <a style="text-decoration: none" href="www.linkedin.com/in/stephen-thompson-790202241" target="_blank">
                         <img src="./img/linkedin-icon.svg" alt="LinkedIn">
                     </a>
                 </div>
             </footer>
         </div>
 
-        <script src="js/tota11y.min.js"></script>
+        <script src="js/main.js"></script>
+        <!-- <script src="js/tota11y.min.js"></script> -->
     </body>
 </html>

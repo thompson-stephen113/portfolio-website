@@ -108,8 +108,16 @@ body {
 
 /*----------------------------------Headings----------------------------------*/
 h1 {
-    font-size: 30px;
+    font-size: 35px;
     font-weight: 700;
+    max-width: -webkit-fit-content;
+    max-width: -moz-fit-content;
+    max-width: fit-content;
+    margin: auto;
+    padding: 10px 15px;
+    border: 1px solid var(--border-color-primary);
+    border-radius: 20%;
+    background-color: var(--background-color-tertiary);
 }
 
 h2 {
@@ -119,7 +127,7 @@ h2 {
 
 h3 {
     font-size: 18px;
-    font-weight:700;
+    font-weight: 700;
 }
 
 
@@ -206,104 +214,63 @@ h3 {
 .about-main {
     margin: 150px 20px auto 20px;
     text-align: center;
-    -webkit-box-flex: 1;
-        -ms-flex: 1;
-            flex: 1;
+    padding-bottom: 30px;
 }
 
-.about-table {
+/*grid fallback*/
+.about-grid__item {
     display: inline-block;
+    width: 33%;
+}
+/*grid fallback*/
+
+@supports (display: grid) {
+    .about-grid {
+        display: -ms-grid;
+        display: grid;
+        -ms-grid-columns: 1fr 20px 1fr;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        margin: 0;
+        padding: 20px;
+        text-align: center;
+    }
+}
+
+.about-grid__item {
     background-color: var(--background-color-tertiary);
-    padding: 30px;
+    width: auto;
+    min-height: auto;
+    margin: 0;
+    padding: 20px;
     border-radius: 5%;
     border-color: var(--border-color-primary);
 }
 
-@-webkit-keyframes color-change {
-    0% {
-        fill: var(--sun-color-primary);
-    }
-    50%{
-        fill: var(--sun-color-secondary);
-    }
-    100% {
-        fill: var(--sun-color-tertiary);
-    }
+.about-grid__item:last-child {
+    grid-column: 1 / -1;
 }
 
-@keyframes color-change {
-    0% {
-        fill: var(--sun-color-primary);
-    }
-    50%{
-        fill: var(--sun-color-secondary);
-    }
-    100% {
-        fill: var(--sun-color-tertiary);
-    }
+.about-details {
+    text-align: left;
 }
 
-.sun {
-    -webkit-animation: 4s color-change infinite alternate linear;
-            animation: 4s color-change infinite alternate linear;
+.resume-image,
+.town-image {
+    max-width: 100%;
+    width: 50%;
+    height: auto;
+    border: 3px solid var(--border-color-primary);
+    cursor: pointer;
 }
 
-@-webkit-keyframes cloud-move {
-    from {
-        -webkit-transform: translate(0, 50px);
-                transform: translate(0, 50px);
-    }
-    to {
-        -webkit-transform: translate(200px, 50px);
-                transform: translate(200px, 50px);
-    }
-}
-
-@keyframes cloud-move {
-    from {
-        -webkit-transform: translate(0, 50px);
-                transform: translate(0, 50px);
-    }
-    to {
-        -webkit-transform: translate(200px, 50px);
-                transform: translate(200px, 50px);
-    }
-}
-
-.cloud-front {
-    -webkit-animation: 30s cloud-move infinite alternate linear;
-            animation: 30s cloud-move infinite alternate linear;
-}
-
-@-webkit-keyframes cloud-move-reverse {
-    from {
-        -webkit-transform: translate(446px, 48px);
-                transform: translate(446px, 48px);
-    }
-    to {
-        -webkit-transform: translate(100px, 48px);
-                transform: translate(100px, 48px);
-    }
-}
-
-@keyframes cloud-move-reverse {
-    from {
-        -webkit-transform: translate(446px, 48px);
-                transform: translate(446px, 48px);
-    }
-    to {
-        -webkit-transform: translate(100px, 48px);
-                transform: translate(100px, 48px);
-    }
-}
-
-.cloud-back {
-    -webkit-animation: 34s cloud-move-reverse infinite alternate linear;
-            animation: 34s cloud-move-reverse infinite alternate linear;
+.source-text {
+    font-size: small;
+    text-align: center;
 }
 
 
-/*----------------------------------My Work----------------------------------*/
+/*----------------------------------Projects----------------------------------*/
 .work-main {
     margin: 150px 20px auto 20px;
     padding-bottom: 30px;
@@ -340,11 +307,13 @@ h3 {
     border-color: var(--border-color-primary);
 }
 
-.my-work-grid__item .grid-image {
+.work-image {
     max-width: 100%;
     max-height: 100%;
     width: auto;
     height: auto;
+    border: 3px solid var(--border-color-primary);
+    cursor: pointer;
 }
 
 .my-work-grid__item p {
@@ -460,6 +429,58 @@ button:focus,
 }
 
 
+/*----------------------------------Modals----------------------------------*/
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.9);
+}
+  
+
+.modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    max-width: 90%; /* Adjust as needed */
+    max-height: 90vh; /* Adjust as needed */
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(27, 27, 27, 0.788);
+}
+
+.close {
+    color: #fff;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 35px;
+    font-weight: bold;
+}
+  
+.close:hover,
+.close:focus {
+    color: #999;
+    text-decoration: none;
+    cursor: pointer;
+}
+
 /*----------------------------------User Input----------------------------------*/
 input[type=submit] {
     border: none;
@@ -486,22 +507,23 @@ input[type=submit]:hover, input[type=submit]:focus {
         -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
     }
+
     .my-work-grid__item:last-child {
-        -ms-grid-column: 3;
-        grid-column: 3 / 3;
-        -ms-grid-row: 2;
-        -ms-grid-row-span: 1;
-        grid-row: 2 / 3;
+        grid-column: auto;
+        grid-row: auto;
     }
+
     .contact-div {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
             -ms-flex-direction: column;
                 flex-direction: column;
     }
+
     .contact-info {
         margin-bottom: 30px;
     }
+
     .contact-form {
         margin-top: 30px;
     }
@@ -515,6 +537,7 @@ input[type=submit]:hover, input[type=submit]:focus {
     .website-logo {
         width: 150px;
     }
+    
     .navigation-list {
         display: -ms-grid;
         display: grid;
@@ -525,6 +548,7 @@ input[type=submit]:hover, input[type=submit]:focus {
         padding: 10px;
         text-align: center;
     }
+
     .navigation-list li {
         width: auto;
         min-height: auto;
@@ -541,18 +565,20 @@ input[type=submit]:hover, input[type=submit]:focus {
         margin-top: 325px;
     }
 
-    .work-main {
-        margin-top: 325px;
-    }
-    .my-work-grid {
-        gap: 10px;
+    .about-grid {
         -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
     }
-    .my-work-grid__item:last-child {
-        grid-column: auto / auto;
-        grid-row: auto / auto;
-    }    
+
+    .work-main {
+        margin-top: 325px;
+    }
+
+    .my-work-grid {
+        -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
 
     .contact-main {
         margin-top: 325px;
@@ -563,6 +589,7 @@ input[type=submit]:hover, input[type=submit]:focus {
     .main-navigation {
         padding-right: 10px;
     }
+
     .navigation-list li {
         margin-right: 15px;
     }
@@ -576,6 +603,7 @@ input[type=submit]:hover, input[type=submit]:focus {
         padding: 30px;
         margin-top: 300px;
     }
+
     .profile-portrait {
         margin: 0;
     }
@@ -593,17 +621,11 @@ input[type=submit]:hover, input[type=submit]:focus {
     }
 }
 
-@media all and (min-width: 500px) and (max-width: 750px) {
-    .my-work-grid {
-        -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
-    }
-}
-
 @media all and (max-width: 500px) {
     .website-logo {
         width: 210px;
     }
+
     .navigation-list {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -617,6 +639,7 @@ input[type=submit]:hover, input[type=submit]:focus {
                 align-items: flex-end;
         font-size: 18px;
     }
+
     .navigation-list li {
         padding: 5px;
     }
