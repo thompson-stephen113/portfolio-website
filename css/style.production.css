@@ -14,9 +14,6 @@
     --border-color-secondary: #2b2b2b;
     --span-background-color: #000;
     --span-text-color: #00df00;
-    --sun-color-primary: #EDC655;
-    --sun-color-secondary: #FCFFAD;
-    --sun-color-tertiary: #F76414;
     --button-color-primary: #357b70;
     --button-color-secondary: #e0b354;
     --button-border-color: rgba(0, 0, 0, 0.3);
@@ -126,6 +123,7 @@ h2 {
 }
 
 h3 {
+    text-align: left;
     font-size: 18px;
     font-weight: 700;
 }
@@ -180,7 +178,7 @@ h3 {
         align-self: center;
     background-color: var(--background-color-tertiary);
     max-width: 700px;
-    margin: 200px 40px auto 40px;
+    margin: 140px 40px 40px 40px;
     padding: 10px 40px 30px 40px;
     border-radius: 5%;
     border-color: var(--border-color-primary);
@@ -212,9 +210,8 @@ h3 {
 
 /*----------------------------------About Me----------------------------------*/
 .about-main {
-    margin: 150px 20px auto 20px;
+    margin: 140px 40px 40px 40px;
     text-align: center;
-    padding-bottom: 30px;
 }
 
 /*grid fallback*/
@@ -272,8 +269,7 @@ h3 {
 
 /*----------------------------------Projects----------------------------------*/
 .work-main {
-    margin: 150px 20px auto 20px;
-    padding-bottom: 30px;
+    margin: 140px 40px 40px 40px;
     text-align: center;
 }
 
@@ -333,8 +329,7 @@ h3 {
 
 
 .contact-main {
-    margin: 150px 40px auto 40px;
-    padding-bottom: 30px;
+    margin: 140px 40px 40px 40px;
     text-align: center;
     -webkit-box-flex: 1;
         -ms-flex: 1;
@@ -367,7 +362,7 @@ h3 {
             flex: 1
 }
 
-.contact-form {
+/* .contact-form {
     background-color: var(--background-color-tertiary);
     padding: 30px;
     margin: 10px 30px 30px 30px;
@@ -375,10 +370,8 @@ h3 {
     width: 400px;
     border-radius: 5%;
     border-color: var(--border-color-primary);
-    -webkit-box-flex: 1;
-        -ms-flex: 1;
-            flex: 1;
-}
+    flex: 1;
+} */
 
 /*----------------------------------Links----------------------------------*/
 a {
