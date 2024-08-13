@@ -273,7 +273,7 @@ h3 {
     text-align: left;
 }
 
-.my-work-grid__item:last-child {
+.my-work-grid__item:nth-child(7) {
     grid-column: 3 / 3;
     grid-row: 1 / 3;
 }
@@ -441,7 +441,7 @@ input[type=submit]:hover, input[type=submit]:focus {
         grid-template-columns: 1fr 1fr;
     }
 
-    .my-work-grid__item:last-child {
+    .my-work-grid__item:nth-child(7) {
         grid-column: auto;
         grid-row: auto;
     }
